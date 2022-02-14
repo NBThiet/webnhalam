@@ -1,0 +1,324 @@
+
+@media only screen and (max-width:740px){
+    
+/*mobile*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+htl{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* cac phần trong mobile*/
+#nav-mobile{
+    display: block;
+
+}
+#nav2{
+    display: block;
+}
+#main {
+ 
+}
+/*phần header đầu trang*/
+#header{
+   
+    height: 35px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#header #nav2{
+    width: 200px;
+    box-shadow: 0 0 10px ;
+    position: absolute;
+    top: 35px;
+    z-index: 3;
+    background-color: #fff;
+    height: 300px;
+   
+}
+#nav2{
+    transform: translateX(-100%);
+}
+#nav >li{
+    display: none;
+}
+#nav2 li{
+   
+    position: relative;
+}
+.fa-bars{
+color: #fff;
+padding: 10px;
+
+display: block;
+position: absolute;
+}
+
+.outlay{
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+/*phần checkbox nav*/
+.checkbox:checked~.outlay{
+display: block;
+}
+.checkbox:checked~ #nav2{
+    transform: translateX(0%);
+}
+
+/* phần đổ xuôngs của thể loại*/
+#nav2 .subnav{
+    min-width:200px;
+    display:none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px 
+    
+}
+
+#nav2 > li > a{
+    color: rgb(10, 10, 10);
+}
+
+#nav2 .subnav a{
+    color: #000;
+   
+}
+
+#nav2, .subnav{
+    list-style-type: none;
+}
+#nav2 li a{
+    text-decoration: none;
+    
+    line-height: 35px;
+    padding: 0 5px;
+    display: block;
+
+}
+/* phần hover cua the loại*/
+
+#nav2 li:hover .subnav {
+    display: block;
+}
+#nav2 > li:hover > a,
+#nav2 .subnav li:hover a{
+  color: #000;
+  background-color:darkgrey;
+}
+/* phần để chèn icon*/
+ 
+#header #icon{
+    float: right;
+    color: rgb(12, 12, 12);
+    line-height: 35px;
+    
+}
+#header #icon i{
+    line-height: 10px;
+}
+#header #icon i:hover{
+    background-color: red;
+}
+#header .ti-bell{
+    font-size: 15px;
+  
+    margin-right: 5px;
+    position: relative;
+    color: #fff;
+    z-index: 3;
+}
+
+#header .ti-search{
+    font-size: 20px;
+    color: #000;
+    right: 0px;
+    position: absolute;
+    margin-top: 35px;
+    border-radius: 10px;
+   
+}
+#header #icon input{
+    margin-top: 25px;
+    position: absolute;
+    right: 50px;
+    font-size: 20px;
+}
+#header .fa-user-circle {
+    font-size: 20px;
+    padding:  12px 10px 12px 10px;
+    margin-right: 0px;
+    position: relative;
+    margin-right: 50px;
+}
+#header .ti-angle-double-down{
+    font-size: 15px;
+    padding:  13px 10px 13px 10px;
+    margin-right: 0px;
+    position: relative;
+    color: #fff;
+}
+
+#header .user{
+    right: 0px;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 0 10px rgba(46, 40, 40);
+    list-style-type: none;
+    display: none;
+  
+    
+}
+
+/* hover cua phần icon*/
+#header .user li:hover a {
+    background-color: darkgrey;
+    color: #000;
+}
+
+/* phần icon đổ xuống*/
+#header .down{
+    position: absolute;
+    right: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(44, 35, 35);
+    display: none;
+    width: 100px;
+   top: 35px;
+}
+
+#icon .down li a{
+    color: #000;
+    padding-right: 5px;
+}
+#header .down li:hover a {
+    background-color: darkgrey;
+    color: #000;
+    
+}
+/* hover của icon*/
+#icon i:hover .down{
+    display: block;
+}
+
+#header .bell{
+    right: 0px;
+    position: absolute;
+    background-color: #fff;
+    min-width: 230px;
+    box-shadow: 0 0 10px rgba(46, 40, 40);
+    list-style-type: none;
+    display: none;
+    top: 35px;
+}
+
+#icon i:hover .bell a{
+    color: #000;
+    
+}
+
+#icon i:hover .bell{
+    display: block;
+}
+/* phần lide chuyển động đầu trang*/
+.slideshow{
+    display: none;
+}
+/* nơi thêm các bộ anime*/
+#topanime2{
+    display: block;
+}
+
+
+#topanime2 .anime{
+height: 250px;
+background-color:#fff;
+margin-top: 30px;
+width: 100%;
+display: flex;
+
+width: 100%;
+
+
+}
+
+#topanime2 .anime .anime1{
+   position: relative;
+    background: #5A554F;
+    width: 40%;
+    margin-right: 5px;
+   box-sizing: border-box;
+    border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(44, 35, 35);
+}
+
+.anime .animes img 
+ {
+    height: 250px;
+  
+    width: 100%;
+  
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(44, 35, 35);
+    
+}
+
+.anime .animes img:hover{
+   transform: scale(1.1);
+    opacity: 0.6;
+}
+/*phần hiện lên khi hover vào anime*/
+.anime .anime1 .nar{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.5) ;
+    transform:scaleY(0);
+    transition: transform .5s;
+}
+.anime .anime1:hover .nar{
+    transform:scaleY(1);
+
+}
+.anime .anime1 .nar h2{
+
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#topanime > .anime{
+    display: none;
+     
+  }
+/* nội dung bên dưới*/
+#content{
+
+
+}
+
+#footer{
+
+}
+}

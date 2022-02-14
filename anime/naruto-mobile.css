@@ -1,0 +1,226 @@
+@media only screen  and (max-width:740px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    htl{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    #main {
+     
+    }
+    /*phần header đầu trang*/
+    #header{
+        position: fixed;
+        height: 45px;
+        background-color: black;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        
+    }
+    #nav li{
+       
+        position: relative;
+    }
+    
+    #nav > li{
+      display: inline-block;
+    }
+    /* phần đổ xuôngs của thể loại*/
+    
+    #nav .subnav{
+        min-width:154px;
+        display:none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px 
+        
+    }
+    
+    #nav > li > a{
+        color: #fff;
+    }
+    
+    #nav .subnav a{
+        color: #000;
+       
+    }
+    
+    #nav, .subnav{
+        list-style-type: none;
+    }
+    #nav li a{
+        text-decoration: none;
+        
+        line-height: 45px;
+        padding: 0 25px;
+        display: block;
+    
+    }
+    /* phần hover cua the loại*/
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    #nav > li:hover > a,
+    #nav .subnav li:hover a{
+      color: #000;
+      background-color:darkgrey;
+    }
+    /* phần để chèn icon*/
+     
+    #header #icon{
+        float: right;
+        color: #fff;
+        line-height: 45px;
+        
+    }
+    
+    #header #icon i:hover{
+        background-color: red;
+    }
+    #header .ti-bell{
+        font-size: 20px;
+        padding:  14px 8px 15px 10px;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    #header .ti-search{
+        font-size: 20px;
+        padding:  20px 10px 15px 10px;
+      
+    }
+    #header .fa-user-circle {
+        font-size: 20px;
+        padding:  12px 10px 12px 10px;
+        margin-right: 0px;
+        position: relative;
+        margin-right: 50px;
+        color: #fff;
+    }
+    #header .ti-angle-double-down{
+        font-size: 20px;
+        padding:  18px 10px 15px 10px;
+        margin-right: 0px;
+        position: relative;
+    }
+    
+    
+    /* phần icon đổ xuống*/
+    #header .down{
+        position: absolute;
+        right: 0px;
+        padding-right: 0px;
+        background-color: #fff;
+        list-style-type: none;
+        box-shadow: 0 0 10px rgba(44, 35, 35);
+        display: none;
+        width: 150px;
+    }
+    
+    #icon .down li a{
+        color: #000;
+        padding-right: 5px;
+    }
+    #header .down li:hover a {
+        background-color: darkgrey;
+        color: #000;
+        
+    }
+    /* hover của icon*/
+    #icon i:hover .down{
+        display: block;
+    }
+    
+    #header .bell{
+        right: 0px;
+        position: absolute;
+        background-color: #fff;
+        min-width: 230px;
+        box-shadow: 0 0 10px rgba(46, 40, 40);
+        list-style-type: none;
+        display: none;
+    }
+    
+    #icon i:hover .bell a{
+        color: #000;
+        
+    }
+    
+    #icon i:hover .bell{
+        display: block;
+    }
+    /*phần trình bày một số thông tin về phim*/
+    .troinoi{
+        background-color:rgb(75, 69, 69) ;
+        width: 42%;
+        height: 700px;
+       
+    }
+    .naruto {
+       
+        width: 40%;
+        height: 300px;
+        background-color: #EF9D22;
+       margin-top: 0px;
+       box-shadow: 0 0 10px #342F29;
+       border-radius: 10px;
+       
+    }
+    .naruto  img {
+        height: 300px;
+        top:0px;
+         position: absolute;
+    }
+    .naruto .nar{
+        margin-left: 230px;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 20px;
+      color: red;
+    }
+    .naruto .nar i{
+      color: #000;
+    }
+    /*vd trailer*/
+    .video{
+        width: 40%;
+        height: auto;
+        margin-top: 305px;
+        
+       
+    }
+    /* nội dung bộ truyện*/
+    #content{
+        width: 58%;
+        margin-left: 42%;
+        height:2000px;
+        background-color: rgb(75, 69, 69);
+      top: 500px;
+        
+        
+    }
+    #content .h{
+        font-size: 30px;
+        
+        color: antiquewhite;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #content .noidung i{
+      font-size: 20px;
+      color:#fff;
+      margin-left: 10px;
+      
+      
+    }
+    #content .bl li{
+        color:#fff;
+        font-size: 30px;
+    }
+}

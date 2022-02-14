@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+htl{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main {
+ 
+}
+/*phần header đầu trang*/
+#header{
+    position: fixed;
+    height: 55px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 2px ;
+    
+}
+#nav li{
+   
+    position: relative;
+}
+
+#nav > li{
+  display: inline-block;
+}
+/* phần đổ xuôngs của thể loại*/
+
+#nav .subnav{
+    min-width:154px;
+    display:none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px 
+    
+}
+
+#nav > li > a{
+    color:black;
+}
+
+#nav .subnav a{
+    color: #000;
+   
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav li a{
+    text-decoration: none;
+    
+    line-height: 45px;
+    padding: 0 25px;
+    display: block;
+
+}
+/* phần hover cua the loại*/
+
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+  color: #000;
+  background-color:darkgrey;
+}
+
+body{
+   
+}
+/* phần noi dung */
+ 
+#trangnoidung .table  .nar{
+    color:black;
+}
+
+#trangnoidung{
+    margin-top: 50px;
+    
+}
+#table{
+    width: 100%;
+    display: table;
+
+    table-layout: fixed; 
+    border-spacing: 10px; 
+}
+#table .like,
+#table .content,
+#table .infor
+    {
+        display: table-cell;
+        
+    }
+/* can chinh trang */
+#table .like,
+#table .infor{
+    width: 25%;
+    
+}
+
+#table .like .likepl{
+    position: fixed;
+    display:block;
+    margin-left:150px;
+    margin-top: 60px;;
+}
+#table .like .likepl hr{
+    margin-top:20px;
+}
+
+
+#table .like .ten{
+ display: block;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#table .icon{
+    
+}
+
+#table .content{
+    width: 100%;
+    top:100px;
+    display: block;
+
+}
+
+#table .content h1{
+    margin-top:45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#table .like .icon{
+    margin-top:20px;
+    font-size:20px;
+}
+#table .like .icon .ti-comment{
+margin-left: 60px;
+}
+/* chinh phan ten nguoi dang*/
+#table .content .taikhoan{
+    height:50px;
+    width: 100%;
+    margin-top: 30px;
+}
+#table .content .taikhoan img{
+    
+    height:100%;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#table .content .taikhoan .ten{
+margin-top: -50px;
+z-index: -2;
+margin-left: 60px;
+display: block;
+}
+#table .content .taikhoan i{
+    margin-left: 60px;
+    margin-top:10px;
+    display: block;
+}
+#table .content .noidung{
+    width:100%;
+    margin-top: 30px;
+    font-size:20px;
+}
+
+
+/*phan infor*/
+#table .infor .inforanime{
+    position: fixed;
+    z-index: -1;
+    margin-top:60px;
+}
+#table .infor .inforanime img{
+    height:300px;
+    margin-left: 50px;
+    z-index: 1;
+   display: block;
+  
+  
+}
+#table .infor .thongtin {
+  text-decoration: none;
+  list-style-type: none;
+  color:#000;
+  display:inline-block;
+  margin-left:60px;
+}
+#table .infor .thongtin .nar{
+    font-size:20px;
+}
+/* phần binh luan */
+
+.comment{
+    height:100%;
+    background-color:rgb(255, 255, 255);
+    width: 70%;
+    margin-left: 30%;
+    z-index:3;
+    margin-top: -140px;
+    position:fixed;
+    transform: translateX(100%);
+    
+}
+.comment .ti-close{
+font-size: 20px;
+position: absolute;
+color: rgb(10, 10, 10);
+margin-top: -40px;
+margin-left: 80%;
+
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    display:none;
+}
+.checkcm:checked ~ .overlay{
+    display: block;
+}
+.checkcm:checked ~ .comment{
+    transform: translateX(0%);
+}
+.checkheart:checked ~ .ti-heart{
+    color:red;
+}
+
+.comment img{
+    height:40px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.comment .binhluan{
+    width:70%;
+    height:30px;
+    font-size:15px;
+    border:outset;
+    border-color: #fff;
+    margin-top: -20px;
+   
+}
+.comment .nut{
+margin-bottom: -50px;
+}
+
+
+/* phần comment của trang*/
+
+.group 			  { 
+    position:relative; 
+    margin-bottom:80px; 
+    margin-left:80px;
+    margin-top:-50px;
+  }
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:500px;
+    border:none;
+    border-bottom:1px solid #757575;
+
+  
+  }
+  
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  
+  
+  /* active state */
+  input:focus ~ .label, input:valid ~ .label 		{
+    top:-20px;
+    font-size:14px;
+    color:#ddd019;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:100%;
+  
+  }
+  
+  /* HIGHLIGHTER ================================== */
+ 
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+
+/*phan nut bam de commit binh luan*/
+
+/* <- Demo Stuff Start */
+
+.container2{
+    margin-left: 40%;
+    margin-top: -5%;
+}
+  
+  .btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: white;
+   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+   }
+  
+  /* Demo Stuff End -> */
+  
+  /* <- Magic Stuff Start */
+  
+  .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+  
+  .btn-2 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+  
+  .btn-1 {
+    background-image: linear-gradient(to right, #ddeaeb 0%, #8abce7 51%, #d6e8e9 100%);
+  }
+  
+
+  
